@@ -166,11 +166,21 @@ a.btn:after {
 }
 
 .secondery li {
-	padding: 0px 10px;
+	padding: 0px 7px;
 }
 
 .secondery li:last-child {
 	padding-right: 0;
+}
+
+.secondery li::after {
+	content: url(../img/search_line_devider.png);
+	position: absolute;
+	left: 75px;
+}
+
+.secondery li:last-child::after {
+	content: '';
 }
 
 .navigation li:hover {
@@ -179,28 +189,31 @@ a.btn:after {
 	box-shadow: -5px 9px 8px rgba(0,0,0,0.4);
 }
 
-
-
 .navigation a,
 .secondery a {
 	color: rgb(88, 89, 81);
 }
 
+
 .navigation a:hover,
 .navigation a:active,
-.navigation a:focus,
+.navigation a:focus {
+	color: rgb(51, 153, 204);
+}
+
 .secondery a:hover,
 .secondery a:active,
 .secondery a:focus {
-	color: rgb(51, 153, 204);
+	text-decoration: underline;
 }
+
 
 .main {
 	margin: 35px 0 0 50px;
 }
 
 .secondery {
-	font-size: 0.7em;
+	font-size: 0.8em;
 	position: absolute;
 	right: 0;
 }
@@ -258,9 +271,12 @@ nav.main > ul {
 .marketing-image {
 	display: inline-block;
 	float: right;
-	border-left: 1px solid #ececec;
 	padding-left: 30px;
+}
 
+.marketing-image::before {
+	content: url(../img/line_divider_video.png);
+	margin-right: 40px;
 }
 
 /* 
@@ -415,8 +431,16 @@ h4.sitemap-list-title {
 }
 
 .searchbox {
+	position: relative;
 	float: right;
 	margin-top: 40px;
+}
+
+.searchbox::before {
+	content: url(../img/search_line_devider.png);
+	position: absolute;
+	top: 2px;
+	right: 25px;
 }
 
 .signup-form {
@@ -440,7 +464,6 @@ input[type="submit"] {
 	text-indent: -9999px;
 	width: 26px;
 	float: right;
-	border-left: 1px solid #d0d0d0;
 	cursor: pointer;
 }
 
@@ -500,10 +523,6 @@ header.site {
 
 .slideshow-container {
 	position: relative;
-	height: 550px;
-	background: url(../img/slide-bg-complexity.jpg) no-repeat top center;
-	background-position: 50% 90%;
-	padding: 60px 0 20px 0;
 }
 
 .slideshow-control {
@@ -511,18 +530,25 @@ header.site {
 	top: 50px;
 }
 
-.slide-caption > h2 {
-	width: 300px;
-	line-height: 1.2;
-}
-
-.slide-caption > h2,
-.slide-caption > p {
-	margin-bottom: 15px;
+.slides-container li {
+	height: 550px;
+	background: url(../img/slide-bg-complexity.jpg) no-repeat top center;
+	background-position: 50% 90%;
+	padding: 60px 0 20px 0;
 }
 
 .caption-container {
 	margin-bottom: 30px;
+}
+
+.caption-container > h2 {
+	width: 300px;
+	line-height: 1.2;
+}
+
+.caption-container > h2,
+.caption-container > p {
+	margin-bottom: 15px;
 }
 
 /* 
@@ -631,6 +657,8 @@ h4 + form.signup-form {
 
 .promotions {
 	padding-top: 40px; 
+	position: absolute;
+	z-index: 40;
 }
 
 .promotion-item > a {
