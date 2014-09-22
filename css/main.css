@@ -113,7 +113,6 @@ a {
 	background: rgba(33, 144, 199, 0.7);
 	border: 0;
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2); 
-
 }
 
 a.btn ,
@@ -637,7 +636,8 @@ header.site {
    ========================================================================== */
 
 footer.large-site,
-footer.medium-site {
+footer.medium-site,
+footer.small-site {
 	background: #2d2d2d;
 	position: relative;
 	z-index: 3;
@@ -648,7 +648,8 @@ footer.medium-site > .content-wrapper {
 	height: 40px;
 }
 
-footer.medium-site {
+footer.medium-site,
+footer.small-site {
 	display: none;
 }
 
@@ -670,7 +671,7 @@ footer.medium-site {
 	text-align: center;
 }
 
-.latest-blog-container .event,
+.latest-blog-container,
 .latest-blog-container .event:hover,
 .latest-blog-container .date,
 .latest-blog-container .day {
@@ -798,10 +799,6 @@ h4 + form.signup-form {
 
 .event li a {
 	display: block;
-}
-
-.event li a:hover {
-
 }
 
 .event {
@@ -1495,7 +1492,6 @@ a.view-all  {
 		height: 36px;
 		float: none;
 		background: url(../img/comverse-logo-medium.png) no-repeat top left;
-		/*margin-top: 24px;*/
     }
 
     .secondery {
@@ -1555,7 +1551,6 @@ a.view-all  {
 	}
 
 	.slideshow-container {
-		/*position: relative;*/
 		height: 900px;
 	}
 
@@ -1563,11 +1558,6 @@ a.view-all  {
 		height: 900px;
 	}
 
-/*	.slideshow-control {
-		position: absolute;
-		top: 50px;
-	}
-*/
 	.slides-container li {
 		height: 900px;
 	}
@@ -1600,7 +1590,6 @@ a.view-all  {
 		position: absolute;
 		z-index: 40;
 		left: 0;
-		/*top: 200px;*/
 		bottom: 30px;
 	}
 
@@ -1669,10 +1658,129 @@ a.view-all  {
 		font-size: 0.8em;
 	}
 
+	.news-and-events {
+		background-size: auto 100%;
+		height: auto;
+		padding: 20px 0; 
+	}
+
+	.events {
+		padding: 0 10px;
+		margin-top: 20px;
+	}
+
+	.events li {
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.events li,
+	.events li:first-child {
+		margin-bottom: 15px;
+	}
+
+	.event {
+		width: 100%;
+		height: 90px;
+	}
+
+	.date {
+		width: 60px;
+	}
+
+	.day {
+		font-size: 2em;
+		font-weight: 700;
+	}
+
+	.month {
+		font-size: 1em;
+		padding: 2px 0;
+		text-transform: uppercase;
+	}
+
+	.testimonials-container {
+		max-width: 767px;
+		width: 350px;
+		margin: 0 auto;
+	}
+
+	h2.section.darken {
+		margin-bottom: 20px;
+	}
+
+	.success-stories {
+		padding: 20px 0 30px 0; 
+	}
+
+	.testimonials-container li:last-child {
+		display: none;
+	}
+
+	.testimonials-container + .btn {
+		margin-top: 20px;
+	}
+
+	footer.large-site {
+		display: none;
+	}
+
+	footer.small-site {
+		display: block;
+	}
+
+	.sub-navigation {
+		font-size: 0.75em;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+
+	.sub-navigation li,
+	.sub-navigation li:first-child {
+		width: 100%;
+		border-left: 0;
+		border-bottom: 1px solid #000;
+		float: left;
+		line-height: 3.5;
+		padding: 0;
+	}
+
+	.sub-navigation a {
+		color: #fff;
+		text-transform: uppercase;
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding-left: 14px;
+	}
+
+	.sub-navigation a:hover,
+	.sub-navigation a:active,
+	.sub-navigation a:focus {
+		text-decoration: none;
+		box-shadow: inset 0px 1px 0px 0px #ccc;
+		background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
+						-moz-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
+						-ms-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
+						-o-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
+							gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
+	}
+
+	li.social-nav {
+		text-transform: uppercase;
+		font-size: 1.2em;
+		padding-left: 14px;
+	}
+
+	.social-links {
+		bottom: 150px;
+		left: 120px;
+	}
+
+
 
 
 
 
 	
 }
-
