@@ -1,10 +1,8 @@
 /* ==========================================================================
-   #basic reset
+   #basic reset & import
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-
-/* #BASIC RESET */
 
 html {
   box-sizing: border-box;
@@ -149,6 +147,7 @@ a.btn:after {
 	text-indent: -9999px;
 	background: url(../img/back_top.png) no-repeat top center;
 }
+
 
 
 
@@ -367,7 +366,7 @@ h4.sitemap-list-title {
 }
 
 /* 
-   #slideshow
+   #slideshow-navigation
    ========================================================================== */
 
 .slideshow-indicators {
@@ -398,7 +397,7 @@ h4.sitemap-list-title {
 }
 
 /* 
-   social
+   social-links
    ========================================================================== */
 
 .social-links {
@@ -571,7 +570,6 @@ header.site {
 .slideshow-container > .content-wrapper {
 	height: 550px;
 	position: relative;
-	/*z-index: 9999;*/
 }
 
 .slideshow-control {
@@ -921,7 +919,6 @@ a.view-all  {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-
 }
 
 .wrap-testimonial > a {
@@ -1038,7 +1035,7 @@ a.view-all  {
 }
 
 /* 
-   solutions
+   #solutions
    ========================================================================== */
 
 .solutions {
@@ -1171,7 +1168,6 @@ a.view-all  {
 	background: rgb(225, 116, 20);
 }
 
-
 .small-ts,
 .small-wrap,
 .small-ts-back {
@@ -1244,6 +1240,10 @@ a.view-all  {
 	.content-wrapper {
 		max-width: 768px;
 	}
+
+	/* 
+	   #header
+	   ========================================================================== */
 
 	.brand {
 		width: 109px;
@@ -1326,6 +1326,10 @@ a.view-all  {
 		padding-top: 40px;
 	}
 
+	/* 
+	   #solutions
+	   ========================================================================== */
+
 	.solution {
 		width: 120px;
 		font-size: 0.8em;
@@ -1366,6 +1370,14 @@ a.view-all  {
 		padding-top: 60px;
 	}
 
+	/* 
+	   #events
+	   ========================================================================== */
+
+	.news-and-events {
+		background-size: auto 100%;
+	}
+
 	.events li  {
 		margin-left: 15px;
 	}
@@ -1374,9 +1386,9 @@ a.view-all  {
 		width: 245px;
 	}
 
-	.news-and-events {
-		background-size: auto 100%;
-	}
+	/* 
+		#testimonials
+		========================================================================== */
 
 	.testimonials-container li {
 		width: 280px;
@@ -1454,6 +1466,10 @@ a.view-all  {
 		background: url(../img/back_top_tab.png) no-repeat top center;
 	}
 
+	/* 
+	   #footer
+	   ========================================================================== */
+
 	footer.large-site {
 		display: none;
 	}
@@ -1482,6 +1498,7 @@ a.view-all  {
 
 
 
+
 /* ==========================================================================
    #small breakpoint 767px and lower
    ========================================================================== */
@@ -1491,6 +1508,10 @@ a.view-all  {
 	.content-wrapper {
 		width: 100%;
 	}
+
+	/* 
+	   #header
+	   ========================================================================== */
 
 	header.site {
 		height: 60px;
@@ -1661,6 +1682,10 @@ a.view-all  {
     	display: none;
     }
 
+    /* 
+       #slideshow
+       ========================================================================== */
+
 	.slideshow-container {
 		height: 900px;
 	}
@@ -1755,6 +1780,7 @@ a.view-all  {
 		top: 50%;
 		right: 10px;
 	}
+
 	.promotion-item,
 	.promotion-item:first-of-type,
 	.promotion-item:last-of-type {
@@ -1777,6 +1803,10 @@ a.view-all  {
 		padding: 0;
 	}
 
+	/* 
+	   #solutions
+	   ========================================================================== */
+
 	h2.section {
 		font-size: 1.5em
 	}
@@ -1791,7 +1821,6 @@ a.view-all  {
 
 	.our-solutions {
 		padding: 0;
-
 	}
 
 	.solution {
@@ -1799,6 +1828,10 @@ a.view-all  {
 		margin-top: 30px;
 		font-size: 0.8em;
 	}
+
+	/* 
+	   #events
+	   ========================================================================== */
 
 	.news-and-events {
 		background-size: auto 100%;
@@ -1847,6 +1880,10 @@ a.view-all  {
 		margin: 0 auto;
 	}
 
+	/* 
+	   testimonials
+	   ========================================================================== */
+
 	h2.section.darken {
 		margin-bottom: 20px;
 	}
@@ -1870,6 +1907,10 @@ a.view-all  {
 		bottom: -30px;
 	}
 
+	/* 
+	   #footer
+	   ========================================================================== */
+
 	footer.large-site {
 		display: none;
 	}
@@ -1880,7 +1921,6 @@ a.view-all  {
 
 	.sub-navigation {
 		font-size: 0.75em;
-		/*margin-bottom: 10px;*/
 		color: #fff;
 	}
 
@@ -1951,8 +1991,6 @@ a.view-all  {
 		padding-left: 0;
 	}
 
-
-
 	.tiny-nav > li > a {
 		display: block;
 		color: #000;
@@ -1965,11 +2003,5 @@ a.view-all  {
 	.tiny-nav > li > a:focus {
 		text-decoration: underline;
 	}
-
-
-
-
-
-
 	
 }
