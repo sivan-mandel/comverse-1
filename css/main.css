@@ -1752,7 +1752,8 @@ a.view-all  {
 		left: 10px;
 	}
 
-		.promotions {
+	.promotions {
+		width: 100%;
 		padding-top: 0; 
 		position: absolute;
 		z-index: 40;
