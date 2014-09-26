@@ -293,6 +293,7 @@ nav.main > ul {
 }
 
 input[type="checkbox"],
+input[type="radio"],
 label {
 	display: none;
 }
@@ -1552,7 +1553,9 @@ a.view-all  {
 		z-index: 100;
 	}
 
-	.navigation li {
+	.navigation li,
+	.links > ul,
+	.links > ul > li {
 		padding: 0;
 		float: left;
 		width: 100%;
@@ -1564,13 +1567,7 @@ a.view-all  {
 	}
 
 	.navigation li a {
-		display: block;
-		position: relative;
-		width: 100%;
-		padding: 0 30px;
-		border-bottom: 1px solid #dbdbdb;
-		border-top: 1px solid #fff;
-		color: #585951;
+		display: none;
 	}
 
 	.navigation li a::before {
@@ -1591,6 +1588,48 @@ a.view-all  {
 	}
 
 	.navigation li:hover .mega-dropdwon {
+		display: none;
+	}
+
+	.links {
+		display: block;
+		background: #fff;
+	}
+
+	.links > ul,
+	.links > ul > li {
+		display: block;
+		margin-bottom: 0;
+	}
+
+	.links > ul > li:first-child {
+		box-shadow: none;
+	}
+
+	.links > ul > li,
+	.links > ul > li:hover {
+		text-transform: uppercase;
+		width: 100%;
+		padding: 0 30px;
+		border-bottom: 1px solid #dbdbdb;
+		color: #585951;
+	}
+
+	.links > ul > li > a {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	.links > ul > li a:hover {
+		color: #3399cc;
+		background: #fff;
+		border-bottom: 0;
+		border-top: 0;
+		box-shadow: none;
+	}
+
+	.marketing-image {
 		display: none;
 	}
 
@@ -1620,12 +1659,62 @@ a.view-all  {
 	label[for="search-tap"] {
 		right: 10px;
 		background: url(../img/searchBtnMobile.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+	}
 
+	label[for="your-needs"],
+	label[for="our-portfolio"],
+	label[for="news"],
+	label[for="about"] {
+		display: block;
+		position: relative;
+		width: 100%;
+		padding: 0 30px;
+		border-bottom: 1px solid #dbdbdb;
+		border-top: 1px solid #fff;
+		color: #585951;
+		text-indent: 0;
+		border-radius: 0;
+		border: 0;
+	}
+
+	label[for="your-needs"]::before,
+	label[for="our-portfolio"]::before,
+	label[for="news"]::before,
+	label[for="about"]::before {
+		content: url(../img/navCollapseArrowRight.png);
+		position: absolute;
+		top: 0;
+		left: 10px;
+		display: inline-block;
+		width: 5px;
+		height: 8px;
+	}
+
+	label[for="your-needs"]:hover,
+	label[for="our-portfolio"]:hover,
+	label[for="news"]:hover,
+	label[for="about"]:hover {
+		background: #fcfcfc;
+		color: #3399cc;
+		border-bottom: 0;
+		border-top: 0;
+		box-shadow: -5px 9px 8px rgba(0,0,0,0.1);
+	}
+
+	input[id="your-needs"]:checked + .mega-dropdwon,
+	input[id="our-portfolio"]:checked + .mega-dropdwon,
+	input[id="news"]:checked + .mega-dropdwon,
+	input[id="about"]:checked + .mega-dropdwon {
+		display: block;
+		margin: 0;
+		padding: 0;
+		position: inherit;
+		z-index: 10;
 	}
 
 	input[id="hamburger-nav"]:checked + nav.main {
 		display: block;
-		height: 176px;
+		height: auto;
 	}
 
 	input[id="search-tap"]:checked + form.searchbox {
