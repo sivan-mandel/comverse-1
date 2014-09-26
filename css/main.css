@@ -680,6 +680,7 @@ footer.small-site {
 	text-align: center;
 }
 
+.latest-blog-container .event,
 .latest-blog-container .event:hover,
 .latest-blog-container .date,
 .latest-blog-container .day {
@@ -708,6 +709,7 @@ footer.small-site {
 
 .latest-blog-container .blog-desc {
 	font-size: 1em;
+	padding-top: 15px;
 }
 
 h4 + form.signup-form {
